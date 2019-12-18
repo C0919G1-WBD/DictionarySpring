@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+    <h1>Dictionary</h1>
+    <form th:action="@{home}" method="post">
+        <input type="text" name="eng">
+        <input type="submit" value="Translate">
+    </form>
+    <p th:text="${vi}"></p>
+</body>
+</html>
